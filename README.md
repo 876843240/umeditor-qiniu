@@ -1,4 +1,5 @@
 # umeditor-qiniu
+目前不支持IE9已下浏览器 (支持HTML5即可)
 
 ## UMeditor
 UMeditor，简称UM，是 [Ueditor](http://ueditor.baidu.com) 的简版。是为满足广大门户网站对于简单发帖框和回复框的需求，专门定制的在线富文本编辑器，UM的主要特点就是容量和加载速度上的改变，主文件的代码量为139k，而且放弃了使用传统的iframe模式，采用了div的加载方式，因为这种优势，所以本人在后台管理系统中也习惯用这个编辑器
