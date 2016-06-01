@@ -136,8 +136,8 @@
         UMEDITOR_HOME_URL : URL
 
 
-        ,qiniuTokenUrl: "/getQiniuToken.php"             //获取上传Token地址
-        ,qiniuUploadUrl: "http://upload.qiniu.com" //QINIU提交地址
+        ,qiniuTokenUrl: "/getQiniuToken.php"        //获取上传Token地址
+        ,qiniuUploadUrl: "http://upload.qiniu.com"  //QINIU提交地址
 
         //图片上传配置区 (一下为UM默认配置, 不需要修改)
         ,imageUrl: "/file/editor"               //图片上传提交地址

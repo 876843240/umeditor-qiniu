@@ -241,17 +241,12 @@
             fd.append('chunks', '1');
             $.getJSON(me.editor.options.qiniuTokenUrl, function(result){
                 fd.append('token', result.token);
-                $.ajax({
-                    url: me.editor.options.qiniuUploadUrl, type: 'POST', cache: false,
-                    data: fd, processData: false, contentType: false
-                }).done(function(res) {
+                if(result.key) fd.append('key', result.key);
+                $.ajax({url: me.editor.options.qiniuUploadUrl, type: 'POST', cache: false,
+                    data: fd, processData: false, contentType: false}).done(function(res) {
                     me.uploadComplete('{"url":"'+result.path+"/"+res.key+'", "state":"SUCCESS"}');
-                }).fail(function() {
-                    alert('图片上传失败');
-                });
-            }, function(){
-                alert('token获取失败');
-            });
+                }).fail(function() { alert('图片上传失败'); });
+            }, function(){ alert('token获取失败'); });
 
         },
         //更新input

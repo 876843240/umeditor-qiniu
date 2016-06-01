@@ -17,5 +17,7 @@ getQiniuToken.php是获取QINIU上传授权的token，可以换成java、python�
 {
   "token": "xxxxxxx"    // QINIU token,
   "path": "http://...." // QINIU文件地址域名
+  "key": "editor/images/".md5(time().microtime()).".jpg"; // 文件名称
 }
 ```
+key为选填, 如果为空则按qiniu自动生成的hash作为文件名, 如果需要自定义文件名设置key字段
