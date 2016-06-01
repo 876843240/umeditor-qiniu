@@ -1,4 +1,5 @@
 # umeditor-qiniu
+很多umeditor的项目上传图片到qiniu都是通过后端上传，此项目是通过javascript的方式直接传到qiniu，（获取token除外），这样能够提升速度，减少服务器压力
 目前不支持IE9已下浏览器 (支持HTML5即可)
 
 ## UMeditor
